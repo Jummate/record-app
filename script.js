@@ -18,7 +18,7 @@ let weightedAverage = 0;
 let totalWeightedAve = 0;
 
 
-window.addEventListener('DOMContentLoaded', ()=> {
+/*window.addEventListener('DOMContentLoaded', ()=> {
 	if(!sessionStorage.hasOwnProperty("firstTimeLoading"))
 	{
 		sessionStorage.setItem("firstTimeLoading", "1");
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
 		_("#inner").style.display = "flex";
 	}
 	
-})
+})*/
 _('#btn-fourth').addEventListener('click', ()=> {
 	numOfSubject = _('#num-of-subject').value;
 	if(numOfSubject >= 1 && numOfSubject < 17)
@@ -111,17 +111,5 @@ _('#btn-third').addEventListener('click', () => {
 })
 
 _('#btn-new-student').addEventListener('click', () => {
-	if(sessionStorage.getItem("firstTimeLoading") === "1")
-	{
-		sessionStorage.setItem("firstTimeLoading","0");
-		
-	}
-	else
-	{
-		_('#overlay').style.display = 'none';
-		_("#inner").style.display = "flex";
-		_("#inner").style.animation = 'fadeOut 0.7s ease-in';
-		
-	}
 	location.reload();
 })
