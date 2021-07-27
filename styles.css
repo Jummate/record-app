@@ -1,0 +1,150 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+html, body, #main-container, #overlay{
+	height:100%;
+	width:100%;
+	font-family: 'Century Gothic', 'Segoe UI', Helvetica, sans-serif;
+}
+header, footer, main{
+	background-color:navy;
+	width:100%;
+	display:flex;
+	color:white;
+	align-items:center;
+	justify-content:center;
+}
+
+header, footer{
+	height:8%;
+}
+main{
+	height:84%;
+	background-color:#fff;
+	color:blue;
+}
+#inner{
+	display:none;
+	flex-direction:column;
+	width:100%;
+	height:100%;
+}
+input{
+	width:100%;
+	height:100%;
+	padding:10px;
+	font-size: 24px;
+	letter-spacing:2.5px;
+	font-weight:bolder;
+}
+#user-entry{
+	height:187px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	text-align:center;
+	padding:20px 10px;
+	box-shadow: 2px 2px 8px gray;
+}
+#ctn-count{
+	width: 20%;
+	text-align:center;
+	color:navy;
+	font-size: 12px;
+	font-weight:bolder;
+	margin-left:5px;
+}
+#count, #count-entry{
+	font-size: 30px;
+	color:black;
+}
+#display{
+	height:60%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+	padding:10px;
+}
+button{
+	width:70%;
+	padding:20px;
+	margin:10px auto;
+	color:white;
+	background-color:navy;
+	border-radius: 10px;
+	font-size:24px;
+	letter-spacing: 1.5px;
+	font-weight:bolder;
+	
+}
+.display-item{
+	width:100%;
+}
+.display-item button, #btn-new-student{
+	font-size:18px;
+	width:90%;
+	padding:20px 10px;
+}
+#btn-new-student{
+	font-size:12px;
+	padding:10px;
+	background-color:green;
+}
+#btn-new-student:active{
+	background-color:black;
+}
+h2{
+	letter-spacing:1.2px;
+}
+#first-display{
+	margin-bottom:50px;
+	height:70px;
+	background-color:aliceblue;
+}
+.hide-and-display{
+	visibility: hidden;
+}
+button:active{
+	background-color:black;
+}
+#overlay{
+	height:100%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:10px;
+}
+#btn-fourth{
+	font-size:20px;
+	background-color:green;
+	width:80%;
+}
+#btn-fourth:active{
+	background-color:black;
+}
+
+footer{
+	flex-direction:column;
+	font-weight:bolder;
+	padding:10px;
+	letter-spacing:1.1px;
+}
+
+@keyframes fadeOut{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.5;
+	}
+	100%{
+		opacity:1.0;
+	}
+}

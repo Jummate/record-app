@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+	
+	<div id="main-container">
+		<header>
+			<h1>Record App</h1>
+		</header>
+		<main>
+			<div id='overlay'>
+				<p style='width:90%; margin-bottom:30px;'>
+					<label for='num-of-subject'>Enter the number of subjects:</label>
+					<input type='number' id='num-of-subject' style='margin-top:15px; padding:10px;' autofocus/>
+				</p>
+				<p style='width:80%; text-align:center; margin-top:20px;'><button id = 'btn-fourth'>Submit</button></p>
+			</div>
+			<div id="inner">
+				<div  id='user-entry'>
+					<div style='width:80%;'>
+						<p>
+							<input type='text' id='entry' autofocus/>
+						</p>
+						<button id='btn-first'>Enter</button>
+					</div>
+					<div id='ctn-count'>
+						<p>Total number of entries: <p id='count-entry'>0</p></p>
+						<p>No of subjects entered: <p id='count'>0</p></p>
+					</div>
+				</div>
+				<div id='display'>
+					<div id='first-display' class='display-item'>
+						<h2 id='h-first' style='text-align:center;'></h2>
+					</div>
+					<div id='second-display' class='display-item hide-and-display'>
+						<h2 id='h-sec'></h2>
+						<button id='btn-third'>Get Cummulative</button>
+					</div>
+					<button id='btn-new-student' class='hide-and-display'>Start with a new student</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Powered by Omololu Jumat</p>
+			<p>&copy;2021</p>
+		</footer>
+	</div>
+	<script src='script.js'></script>
+	</body>
+</html>
